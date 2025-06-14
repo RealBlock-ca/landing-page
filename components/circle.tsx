@@ -34,7 +34,7 @@ export default function CircleSection() {
   `;
 
   return (
-    <section className="w-full h-screen flex items-center justify-center bg-[#e9d6ba] relative ">
+    <section className="w-full h-screen flex items-center justify-center bg-[#e9d6ba] relative animate-[ascend_1s_ease-out_0.3s_forwards">
       {/* Central Circle */}
       <div className="w-[600px] h-[600px] rounded-full border-8 border-[#d02218] absolute z-0 animate-pulse" />
 

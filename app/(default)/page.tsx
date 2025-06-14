@@ -23,7 +23,10 @@ export default function Home() {
   const isScrolling = useRef(false);
 
   useEffect(() => {
-    const handleWheel = (e: WheelEvent) => {
+  const handleWheel = (e: WheelEvent) => {
+      // Prevent scrolling when inside scrollable child (like modals or cards)
+      if ((e.target as HTMLElement)?.closest('[data-scrollable="true"]')) return;
+
       if (isScrolling.current) return;
 
       isScrolling.current = true;
@@ -39,14 +42,16 @@ export default function Home() {
         sectionsRef[nextIndex].current?.scrollIntoView({ behavior: "smooth" });
       }
 
-      // Delay to prevent too rapid scrolling
       setTimeout(() => {
         isScrolling.current = false;
-      }, 700); // adjust delay as needed
+      }, 700); // Adjust this duration to match animation speed
     };
 
-    window.addEventListener("wheel", handleWheel);
-    return () => window.removeEventListener("wheel", handleWheel);
+    window.addEventListener("wheel", handleWheel, { passive: true });
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
   }, [currentIndex]);
 
   return (
