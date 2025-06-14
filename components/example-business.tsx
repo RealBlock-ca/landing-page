@@ -5,7 +5,7 @@ import Condo from "@/public/images/condo.jpg";
 import House from "@/public/images/house.webp";
 import Retail from "@/public/images/retail.jpeg";
 
-export default function BusinessCategories() {
+export default function ExampleBusiness() {
   const properties = [
     {
       id: 1,

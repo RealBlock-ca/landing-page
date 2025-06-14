@@ -83,6 +83,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#0"
                 >
+                  Contact us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 transition hover:text-gray-900"
+                  href="#0"
+                >
                   Diversity & Inclusion
                 </Link>
               </li>
@@ -150,7 +158,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <ul className="flex gap-1">
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
+                  className="flex items-center justify-center text-[#d02218] transition hover:text-blue-600"
                   href="#0"
                   aria-label="Twitter"
                 >
@@ -165,7 +173,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
+                  className="flex items-center justify-center text-[#d02218] transition hover:text-blue-600"
                   href="#0"
                   aria-label="Medium"
                 >
@@ -180,7 +188,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
+                  className="flex items-center justify-center text-[#d02218] transition hover:text-blue-600"
                   href="#0"
                   aria-label="Github"
                 >
@@ -200,7 +208,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
       {/* Big text */}
       <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Simple'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Simple'] after:[text-shadow:0_1px_0_white]"></div>
+        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Real'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Real'] after:[text-shadow:0_1px_0_white]"></div>
         {/* Glow */}
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"

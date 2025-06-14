@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import Hero from "@/components/hero-home";
 import CircleSection from "@/components/circle";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
+import ExampleBusiness from "@/components/example-business";
+import WorkFlow from "@/components/works-flow";
 import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
+import AboutUs from "@/components/about-us";
 
 export default function Home() {
   // Section refs
@@ -63,16 +63,16 @@ export default function Home() {
         <CircleSection />
       </div>
       <div ref={sectionsRef[2]}>
-        <BusinessCategories />
+        <ExampleBusiness />
       </div>
       <div ref={sectionsRef[3]}>
-        <FeaturesPlanet />
+        <WorkFlow />
       </div>
       <div ref={sectionsRef[4]}>
-        <LargeTestimonial />
+        <AboutUs/>
       </div>
       <div ref={sectionsRef[5]}>
-        <Cta />
+        <LargeTestimonial />
       </div>
     </>
   );
