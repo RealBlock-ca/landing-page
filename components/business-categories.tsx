@@ -12,6 +12,12 @@ import Logo09 from "@/public/images/logo-09.svg";
 export default function BusinessCategories() {
   return (
     <section>
+
+      <div className=" inset-0 flex items-center justify-center z-50">
+      <div className="w-48 h-48 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 shadow-xl"></div>
+      </div>
+
+
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* Tab panels */}
